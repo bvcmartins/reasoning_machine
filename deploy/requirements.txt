@@ -1,0 +1,26 @@
+# Core Streamlit
+streamlit>=1.28.0
+
+# Authentication
+streamlit-authenticator>=0.3.1
+bcrypt>=4.0.0
+
+# LangChain (agent loop lives in tools.py)
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+# OpenAI-compatible client — talks to the local vLLM server (openai/gpt-oss-20b)
+langchain-openai>=0.2.0
+# Legacy agent API (AgentExecutor / create_tool_calling_agent) lives here in
+# LangChain >= 1.0; harmless on older versions.
+langchain-classic>=1.0.0
+
+# Research tools
+langchain-tavily>=0.1.0   # web search
+arxiv>=2.0.0              # backs ArxivAPIWrapper
+
+# Raw substrate talks to Ollama directly
+requests>=2.31.0
+
+# Environment variables
+python-dotenv>=1.0.0
